@@ -56,7 +56,7 @@ function eggclicked(){
   </div>
   <p class='easter-congrate'>Tu as trouvé l’oeuf caché de Pâques 🐰</p>
   <p class='easter-action'>
-  Fais des économies en faisant tes courses sur Match avec ce code promo :</p>
+  Offre disponible chez les Supermarchés Match, vous devez être titulaire de la carte de fidélité pour créditer votre cagnotte de 10€, à partir de 50€ d’achats.</p>
   <div class="easter-button">MIAM10</div>
   </div '>
   <div class='easter-right-col'>
