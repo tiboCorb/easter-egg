@@ -1,0 +1,267 @@
+.eggs {
+    animation: eggs-annim 10s;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+   }
+   
+   .easter-main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:12;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+   }
+   
+   .easter-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+     background-color: #fff;
+     opacity: .9;
+   
+   }
+   .easter-left-col {
+       flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     padding: 40px 24px 24px 24px;
+   }
+   .easter-right-col{
+   @media  (max-width: 640px){
+     display: none;
+   }
+    display: block;
+     width: 370px;
+     position: relative;
+   
+   }
+   .confetti-container{
+   height:100vh;
+   width:100vw;
+   }
+   
+   .easter-modale-container{
+       background: white;
+       box-shadow: 0px 3px 4px #EAF2FB;
+     display: flex;
+     border-radius: 15px;
+     overflow: hidden;
+     height: 450px;
+     width: 600px;
+     z-index:1
+   }
+   
+   .easter-right-col-egg{
+       position: absolute;
+     top: 50px;
+     left: 50px;
+   }
+   .easter-title{
+   font-family: Work Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 59px;
+   letter-spacing: -0.02em;
+   color: #0E0E2C;
+   position:relative;
+   }
+   
+   .easter-button{
+     font-family: Work Sans;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 16px;
+     display: flex;
+     align-items: center;
+     letter-spacing: 0.5px;
+     color: #FAFCFE;
+     flex: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 16px 40px;
+     margin: 0px 8px;
+     background: #2BB6AA;
+     border-radius: 8px;
+     cursor: pointer 
+   
+   }
+   
+   .easter-congrate{
+   font-family: Work Sans;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 140%;
+   color: #4A4A68;
+   }
+   
+   .easter-action{
+   font-family: Work Sans;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 140%;
+   color: #4A4A68;
+   }
+   
+   .orange-confetti{
+     position: absolute;
+     width: 40px;
+     height: 0px;
+     left: 200px;
+     border-radius: 9px;
+     top: 2px;
+     border: 5px solid #EF760F;
+     transform: rotate(
+   163.23deg
+   );
+   }
+   
+   .green-confetti{
+   position: absolute;
+    border-radius: 9px;
+   width: 40px;
+   height: 0px;
+   left: 150px;
+   top: -35px;
+   border: 5px solid #2BB6AA;
+   transform: rotate(-82.55deg);
+   }
+   
+   .blue-confetti{
+   position: absolute;
+   width: 40px;
+   height: 0px;
+   left: 180px;
+   top: 66px;
+   border-radius: 9px;
+   border: 5px solid #1ACCF8;
+   transform: rotate(27.23deg);
+   }
+   
+   @keyframes confetti-slow {
+   0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+   
+   100% { transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg); }
+   }
+   
+   @keyframes confetti-medium {
+   0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+   
+   100% { transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg); }
+   }
+   
+   @keyframes confetti-fast {
+   0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+   
+   100% { transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg); }
+   }
+   
+   
+   
+   .confetti-container {
+   perspective: 700px;
+   
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   }
+   
+   .confetti {
+   position: absolute;
+   z-index: 1;
+   top: -10px;
+   border-radius: 0%;
+   }
+   
+   .confetti--animation-slow {
+     animation: confetti-slow 2.25s linear 1 forwards;
+   }
+   
+   .confetti--animation-medium {
+     animation: confetti-medium 1.75s linear 1 forwards;
+   }
+   
+   .confetti--animation-fast {
+     animation: confetti-fast 1.25s linear 1 forwards;
+   }
+   
+   
+   
+   @keyframes eggs-annim {
+     0% {
+        left: 15px;
+        top: 10px;
+     }
+     10%{
+       left: 10px
+     }
+   
+     33% {
+           transform: rotate(
+   -40deg
+   );
+        left: -10px;
+        top: 10px;
+     }
+   
+     43% {
+           transform: rotate( 
+   45deg
+   );
+       left: 260px;
+       top: 10px;
+     }
+   
+     53%  {
+           transform: rotate( 
+   -360deg
+   );
+       left: 220px;
+       top: 10px;
+     }
+     
+     63%{
+         transform: rotate( 
+   -0deg
+   );
+   
+     }
+   
+     73% {
+            top: -30px;
+     }
+   
+     83% {
+        left: 15px;
+        top: 10px;
+     }
+   
+     90% {
+        left: -20px;
+        top: -30px;
+     }
+     100% {
+           transform: rotate( 
+   -10deg
+   );
+        left: 50px;
+        top: 50px;
+     }
+   }
