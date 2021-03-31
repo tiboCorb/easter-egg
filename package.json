@@ -1,0 +1,31 @@
+{
+  "name": "miam-eater",
+  "version": "0.0.0",
+  "author": "Miam",
+  "repository": {
+    "type": "git"
+  },
+  "license": "GNU GPLv3",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {}
+}
