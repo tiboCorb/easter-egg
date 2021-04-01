@@ -57,8 +57,11 @@ function eggclicked(){
   <p class='easter-congrate'>Tu as trouvé l’oeuf caché de Pâques 🐰</p>
   <p class='easter-action'>
   Offre disponible chez les Supermarchés Match, vous devez être titulaire de la carte de fidélité pour créditer votre cagnotte de 10€, à partir de 50€ d’achats.</p>
-  <div class="easter-button">MIAM10</div>
-  </div '>
+  <div class="easter-button"><span>MIAM10</span>  
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+  <input id="code" value='MIAM10'>
+  </div>
+  </div>
   <div class='easter-right-col'>
   <div class='easter-right-col-egg'>${getEggsSVG(512,412)}</div>
   </div>
@@ -78,6 +81,9 @@ function eggclicked(){
 
 function closeEaterModale() {
  const modalRef = document.querySelector('.easter-main-container')
+ const copyText = document.querySelector("#code");
+  copyText.select();
+  document.execCommand("copy");
 modalRef.remove();
 }
 
@@ -184,7 +190,7 @@ function onDomChangeCallBack() {
 var el = document.getElementById('recipes');
 if(el && el.style.overflow !== 'unset'){
    el.style.overflow = 'unset';
-gameLoop()
+
 }
 
 }
@@ -198,3 +204,4 @@ mutationObserver.observe(mutationTarget, observedAtts);
 }
 
 initDocumentMutationObserver();
+gameLoop()

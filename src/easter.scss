@@ -97,7 +97,14 @@
      margin: 0px 8px;
      background: #2BB6AA;
      border-radius: 8px;
-     cursor: pointer 
+     cursor: pointer;
+     input{
+      position: fixed;
+      top :-200px
+     } ;
+     svg{
+      margin-left: 10px;
+     };
    
    }
    
